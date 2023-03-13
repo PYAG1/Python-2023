@@ -26,4 +26,14 @@ for i in list:
 my_tuple = (1,3,True)
 print(my_tuple.count('int'))
 #.count shows the number of occurence of a value
+#.index gives the index 
 
+
+
+seta={1,2,3,4,5,6,7,8} #does not allow duplicates, you can add or remove and yu can print values with index
+
+setb={1,2,30,4,65,12,7,8}
+
+print(seta.intersection(setb)) #you can .union to add the two, or | and intersection 
+print(seta.difference(setb)) #shows the element you can also represent by using -
+#we have symmetrical difference
