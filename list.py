@@ -18,3 +18,12 @@ print(list)
 
 for i in list:
     print('hi',i)
+#we use brackets
+##########################################################################
+
+
+
+my_tuple = (1,3,True)
+print(my_tuple.count('int'))
+#.count shows the number of occurence of a value
+
