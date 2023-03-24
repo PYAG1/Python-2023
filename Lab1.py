@@ -107,14 +107,10 @@ def summarize_order(order):
     ### WRITE SOLUTION HERE
     subtotal = calculate_subtotal(order)
     tax = calculate_tax(subtotal)
-    total =  
-    names=[]
-    for x in range(3):
-        names.append(order[x]['name'])
+    
+    total =  round(subtotal + tax,2)
+    names = [item['name'] for item in order]
     return names,total
-
-
-
     raise NotImplementedError()
 
 # This function is provided for you, and will print out the items in an order
