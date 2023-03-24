@@ -62,7 +62,7 @@ def calculate_subtotal(order):
     print('Calculating bill subtotal...')
     for x in range(3):
         total =total + order[x]['price']
-        return total
+    return total
 
 
 
@@ -146,8 +146,8 @@ def main():
     print_order(order)
 
 
-    ##subtotal = calculate_subtotal(order)
-    ##print("Subtotal for the order is: " + str(subtotal))
+    subtotal = calculate_subtotal(order)
+    print("Subtotal for the order is: " + str(subtotal))
 
     # tax = calculate_tax(subtotal)
     # print("Tax for the order is: " + str(tax))
