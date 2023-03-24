@@ -81,7 +81,8 @@ def calculate_tax(subtotal):
         float - The tax required of a given subtotal, which is 15% rounded to two decimals.
     """
     print('Calculating tax from subtotal...')
-    ### WRITE SOLUTION HERE
+    tax = subtotal * 0.15
+    return round(tax,2)
 
     raise NotImplementedError()
 
@@ -104,6 +105,15 @@ def summarize_order(order):
     """
     print_order(order)
     ### WRITE SOLUTION HERE
+    subtotal = calculate_subtotal(order)
+    tax = calculate_tax(subtotal)
+    total =  
+    names=[]
+    for x in range(3):
+        names.append(order[x]['name'])
+    return names,total
+
+
 
     raise NotImplementedError()
 
@@ -142,17 +152,16 @@ Feel free to change, uncomment, and add these as you wish.
 '''
 def main():
     order = take_order()
-    print(order)
     print_order(order)
 
 
     subtotal = calculate_subtotal(order)
     print("Subtotal for the order is: " + str(subtotal))
 
-    # tax = calculate_tax(subtotal)
-    # print("Tax for the order is: " + str(tax))
+    tax = calculate_tax(subtotal)
+    print("Tax for the order is: " + str(tax))
 
-    # items, subtotal = summarize_order(order)
+    items, subtotal = summarize_order(order)
 
 if __name__ == "__main__":
     main()
