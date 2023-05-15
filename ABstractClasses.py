@@ -10,4 +10,15 @@ class Bank(ABC):
 
 
 class Swiss(Bank):#inherits from the Bank Class
+    def __init__(self):
+        self.bal = 1000
+
+    def basicinfo(self):
+        print("This is the Swiss Bank")
+        return "Swiss Bank:"+ self.bal
     
+    def withdraw(self,amount):
+            self.bal = self.bal - amount
+            print("Withdrawn amount"+ amount)
+    
+        
